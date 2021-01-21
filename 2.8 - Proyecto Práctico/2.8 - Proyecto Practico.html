@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Proyecto Practico - Diseño Web Responsivo </title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+     
+  </head>
+  <body>
+    <div class="container">
+      <header class="amarillo">
+        <h1>Bar chicote</h1>
+        <nav>
+          <div class="icono"></div>
+          <div class="menu">INICIO</div>
+          <div class="menu">NOSOTROS</div>
+          <div class="menu">CONTACTO</div>
+        </nav>
+      </header>
+      <main>
+        <section class="main_text">
+          <div>
+            <h3>CADIZ - ZONA FRANCA</h3>
+            <h1 class="amarillo">BAR CHICOTE</h1>
+          </div>
+          <div>
+            <p>
+              Alberto Chicote nació en Madrid el 23 de junio de 1969, en el seno de una familia de clase trabajadora 
+              que reside en el barrio de Carabanchel Alto.4​5​ Además de la gastronomía, es aficionado a deportes como el rugby y el tiro con arco.
+            </p>
+            <p>
+              Alberto Chicote nació en Madrid el 23 de junio de 1969, en el seno de una familia de clase trabajadora 
+              que reside en el barrio de Carabanchel Alto.4​5​ Además de la gastronomía, es aficionado a deportes como el rugby y el tiro con arco. 
+            </p>
+            <p>Alberto Chicote nació en Madrid el 23 de junio de 1969, en el seno de una familia de clase trabajadora 
+              que reside en el barrio de Carabanchel Alto.4​5​ Además de la gastronomía, es aficionado a deportes como el rugby y el tiro con arco.
+            </p>
+          </div>
+        </section>
+        <section class="images">
+          <img src="img/comida1.jpg" /> <img src="img/comida6.jpg" />
+          <img src="img/comida2.jpg" /> <img src="img/comida7.jpg" />
+          <img src="img/comida3.jpg" /> <img src="img/comida8.jpg" />
+          <img src="img/comida4.jpg" /> <img class="hidden" src="img/comida9.jpg" />
+          <img src="img/comida5.jpg" />
+        </section>
+      </main>
+      <section class="cocineros">
+        <h2 class="amarillo">COCINEROS ESTRELLAS</h2>
+        <article>
+          <h4 >Karlos Arguiñano</h3>
+          <h3 class="amarillo">6 de septiembre de 1948</h3>
+          <p>
+            Hijo de taxista y modista,​ nació en Beasáin (Guipúzcoa), aunque reside desde joven en la villa costera guipuzcoana de Zarauz, donde tiene su hotel-restaurante. 
+        </article>
+        <article>
+          <h4>Jordi Cruz</h>
+          <h3 class="amarillo">29 de junio de 1978</h3>
+          <p>
+            Nació en Manresa y se formó como cocinero en la Escuela Superior de Hostelería de Manresa. A los catorce años empezó a trabajar en el restaurante Estany Clar, entre Cercs y Berga,​ donde recibió su primera estrella Michelin en noviembre de 2004, 
+            convirtiéndose a sus 26 años en el chef más joven de España y en el segundo del mundo en recibir esta distinción.
+          </p>
+        </article>
+        <article>
+          <h4>David Muñoz</h4>
+          <h3 class="amarillo">15 de enero de 1980</h3>
+          <p>
+            David Muñoz Rosillo, también conocido como Dabiz Muñoz, es un cocinero español especializado en cocina de vanguardia.
+             Su restaurante DiverXo ha recibido tres estrellas michelín.
+          </p>
+        </article>
+      </section>
+    </div>
+    <script>
+        $(function() {
+
+            $(".icono").click(function() {
+            $(".menu").toggle();
+            });
+            $(window).resize(function() {
+            var anchura = $(this).width();
+            if (anchura > 576) {
+                $(".menu").show();
+            }
+            });
+        });
+    </script>
+  </body>
+</html>
